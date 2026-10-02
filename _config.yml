@@ -1,0 +1,34 @@
+# SamWiki theme contract for this project site.
+# Theme setup follows GitHub's Jekyll theme guide:
+# https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
+#
+# Skin copied from sdcastillo/sdcastillo.github.io main:
+#   assets/css/style.scss       @import "jekyll-theme-cayman"; then SamWiki tokens
+#   _layouts/default.html
+#   _includes/head-custom.html
+#   _includes/samwiki-nav.html
+# The main page sets `samwiki: true` in front matter.
+#
+# Publish from the default branch (`main`) at the repository root.
+# Live URL once Pages is enabled: https://sdcastillo.github.io/website/
+
+title: PredictiveAnalyst
+description: The Edukate education template and Exam PA HTML viewer that make up this site.
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+  - jekyll-remote-theme
+show_downloads: false
+markdown: kramdown
+
+# embed-code.md is a standalone HTML document stored as Markdown. Leave it out
+# of the Jekyll build so Pages does not wrap that document in the theme layout.
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - embed-code.md
+  - README.md
