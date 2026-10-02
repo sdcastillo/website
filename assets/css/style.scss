@@ -178,6 +178,10 @@ body.samwiki .sw-lede {
   align-items: start;
 }
 
+body.samwiki .sw-lede:not(:has(.sw-find)) {
+  grid-template-columns: minmax(0, 42rem);
+}
+
 body.samwiki .sw-lede-copy h2,
 body.samwiki .sw-find h2 {
   margin-top: 0;
